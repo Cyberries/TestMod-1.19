@@ -1,6 +1,7 @@
 package net.cyberry.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.cyberry.testmod.block.ModBlocks;
 import net.cyberry.testmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,7 @@ public class TestMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

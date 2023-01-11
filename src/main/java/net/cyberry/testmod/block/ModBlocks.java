@@ -31,7 +31,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.TEST_TAB);
     public static final RegistryObject<Block> ZIRCON_ORE_NETHERRACK = registerBlock("netherrack_zircon_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.TEST_TAB);
     public static final RegistryObject<Block> ZIRCON_ORE_ENDSTONE = registerBlock("endstone_zircon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
